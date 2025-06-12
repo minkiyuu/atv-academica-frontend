@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Portfólio</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -42,7 +50,8 @@
           <p>
             Neste portfólio, desenvolvido durante a disciplina de Front-End,
             compartilho um pouco das minhas aptidões e projetos que refletem o
-            início da minha longa jornada na tecnologia.
+            início da minha longa jornada na tecnologia, mesmo que de modo
+            simplificado.
           </p>
           <p>
             Sou curiosa sobre como as coisas funcionam “debaixo dos panos” e
@@ -162,70 +171,89 @@
         </section>
 
         <section id="projects">
-          <h2>Projetos:</h2>
-          <article>
-            <h3>Minha Carteira:</h3>
-            <h4>Dashboard Financeiro com React e TypeScript</h4>
-            <p></p>
-          </article>
-          <article>
-            <h3>NLW Connect - Rocketseat:</h3>
-            <h4>
-              Desenvolvimento de aplicação back-end Java com Maven utilizando
-              Spring Boot e API Rest.
-            </h4>
-            <p></p>
-          </article>
+          <div class="projects-container">
+            <h2>Projetos:</h2>
+            <article class="wallet-nlw">
+              <h3>Minha Carteira:</h3>
+              <h4>Dashboard Financeiro com React e TypeScript</h4>
+              <a href="">Visualizar projeto</a>
+              <img
+                class="wallet"
+                src="assets/wallet.jpg"
+                alt="Minha Carteira"
+              />
+            </article>
+            <article class="wallet-nlw">
+              <h3>NLW Connect - Rocketseat:</h3>
+              <h4>
+                Desenvolvimento de aplicação back-end Java utilizando Spring
+                Boot e API Rest.
+              </h4>
+              <a href="">Visualizar projeto</a>
+              <img
+                class="nlw"
+                src="assets/nlw.jpg"
+                alt="NLW Connect backend captura de tela"
+              />
+            </article>
+          </div>
         </section>
       </main>
-      <aside>
-        <h2>Extras:</h2>
-        <ul>
-          <li>
-            Comecei a jogar em 2008 e trabalhei por 3 anos em loja de games e
-            artigos eletrônicos, o que fortaleceu ainda mais minhas habilidades
-            interpessoais e comunicativas.
-          </li>
-          <li>
-            Poetisa publicada 2 vezes em antologias poéticas da editora Vivara
-            Nacional!
-          </li>
-          <li>Ilustrei um livro!</li>
-        </ul>
-      </aside>
+      <div class="sidecolumn">
+        <aside class="curiosidades">
+          <h2>Curiosidades (Hobbies):</h2>
+          <ul>
+            <li>
+              Comecei a jogar em 2008 e trabalhei por 3 anos em loja de games e
+              artigos eletrônicos.
+            </li>
+            <li>
+              Possuo uma pequena coleção de consoles, composta atualmente por:
+              PSONE, PS2, PS3, PS5, SWITCH, XBOX SERIES S (PS4 vendido ao
+              ingressar na faculdade).
+            </li>
+            <li>
+              Poetisa publicada 2 vezes em antologias poéticas da editora Vivara
+              Nacional.
+            </li>
+            <li>Ilustrei um livro em 2024 (e amo artes visuais).</li>
+            <li>Javinha sempre!</li>
+          </ul>
+        </aside>
+        <aside id="extras">
+          <h2>Extras:</h2>
+          <p>
+            Acesse este portfólio diretamente no GitHub para avaliação, ou
+            conheça mais sobre mim no instagram!
+          </p>
+          <div class="buttons">
+            <a href="https://github.com/minkiyuu" class="btn"
+              >Visualizar no Github</a
+            >
+            <a href="https://www.instagram.com/ayumi_dri/" class="btn"
+              >Visualizar Instagram</a
+            >
+          </div>
+        </aside>
+      </div>
     </div>
 
     <footer id="contact">
-      <p>adrianacristinabranger@gmail.com</p>
-      <div class="social">
-        <a
-          href="https://linkedin.com/in/seunome"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <img
-            src="link-do-icone-linkedin.svg"
-            alt="LinkedIn"
-            width="30"
-            height="30"
-          />
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/adriana-cristina-branger/">
+          <ion-icon name="briefcase"></ion-icon><span>LinkedIn</span>
         </a>
-        <a
-          href="https://github.com/seuusuario"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-        >
-          <img
-            src="link-do-icone-github.svg"
-            alt="GitHub"
-            width="30"
-            height="30"
-          />
+        <span>|</span>
+        <a href="https://github.com/minkiyuu">
+          <ion-icon name="logo-github"></ion-icon><span>GitHub</span>
         </a>
+        <span>|</span>
+        <a href="mailto:adrianacristinabranger@gmail.com">
+          <ion-icon name="mail"></ion-icon><span>Email</span>
+          <span>|</span>
+        </a>
+        <p>© 2025 Adriana Cristina</p>
       </div>
-      <p>© 2025 Adriana Cristina</p>
     </footer>
   </body>
 </html>
