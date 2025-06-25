@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +46,7 @@ header img {
   margin-top: 1rem;
 }
 
-/* Nav */
+/* Nav bar - menu simplificado */
 nav {
   display: flex;
   justify-content: center;
@@ -97,7 +96,7 @@ section {
 
 /* Projects */
 article {
-  background-color: #e5e7eb; /* estou em dúvidas sobre o #1f2937 */
+  background-color: #e5e7eb;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -105,32 +104,25 @@ article {
 }
 
 #projects {
-  background-color: #e5e7eb;
-  padding: 2rem;
+  width: 140%;
+  margin: 0 auto;
+  padding: 2rem 0;
   border-radius: 8px;
   margin-top: 2rem;
 }
 
-#projects {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
-.projects-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
 .wallet,
-.nlw {
+.nlw,
+.game {
   margin-top: 1rem;
   width: 100%;
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.wallet-nlw a {
+  text-decoration: none;
 }
 
 /* Extras */
@@ -155,7 +147,7 @@ aside li {
 }
 
 .buttons {
-  margin-top: 1rem; /* espaço em cima do grupo */
+  margin-top: 1rem;
 }
 
 .btn {
@@ -224,4 +216,79 @@ footer span {
 .contact-links ion-icon {
   margin-right: 6px;
   font-size: 20px;
+}
+
+/* Responsividade - testada pelo responsively app*/
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .layout {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .sidecolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  section,
+  aside,
+  .curiosidades {
+    margin: 0 !important; /* reset do desktop */
+    width: 100%;
+  }
+
+  #skills,
+  #projects {
+    padding: 0;
+    width: 100%;
+  }
+
+  #skills {
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  article {
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
 }
